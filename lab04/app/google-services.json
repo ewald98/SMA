@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "736657718176",
+    "firebase_url": "https://chiuitter-71fe8.firebaseio.com",
+    "project_id": "chiuitter-71fe8",
+    "storage_bucket": "chiuitter-71fe8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736657718176:android:cb887b3a4711ab288482c5",
+        "android_client_info": {
+          "package_name": "ro.upt.ac.chiuitter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736657718176-pmkhq41d75bncuj5ko0kbr540r4s2f5h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD2ozKVSx5eR8ZEeCr0yvyd4SjyQWf9wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736657718176-pmkhq41d75bncuj5ko0kbr540r4s2f5h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

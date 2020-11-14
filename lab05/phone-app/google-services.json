@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "616866754896",
+    "firebase_url": "https://heartratemonitor-a72eb.firebaseio.com",
+    "project_id": "heartratemonitor-a72eb",
+    "storage_bucket": "heartratemonitor-a72eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616866754896:android:a81e480962b8a0d0663c55",
+        "android_client_info": {
+          "package_name": "ro.upt.sma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616866754896-ggch62mb0rsdrletsdkhtug9dd84jgas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN7qNNKswx9iKkZaCC7E5RTE8DGzH-IfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616866754896-ggch62mb0rsdrletsdkhtug9dd84jgas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616866754896:android:67dea474973d9241663c55",
+        "android_client_info": {
+          "package_name": "ro.upt.sma.heart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616866754896-ggch62mb0rsdrletsdkhtug9dd84jgas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN7qNNKswx9iKkZaCC7E5RTE8DGzH-IfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616866754896-ggch62mb0rsdrletsdkhtug9dd84jgas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
