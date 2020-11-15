@@ -23,7 +23,7 @@ class HeartAssistantActivity : AppCompatActivity(), HeartAssistantView {
 
         rv_heart_assistant_measurement_list.layoutManager = LinearLayoutManager(this)
 
-        val code = "3c8c"
+        val code = "4aba"
         this.presenter = Injection.provideHeartAssistantPresenter(code)
     }
 

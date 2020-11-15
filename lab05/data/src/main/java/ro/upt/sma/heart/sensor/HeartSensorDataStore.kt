@@ -17,7 +17,7 @@ class HeartSensorDataStore(context: Context) : HeartSensorRepository {
     private val sensorManager: SensorManager = context.getSystemService(SENSOR_SERVICE) as SensorManager
 
     // ("Get a handle for the sensor")
-    private val heartRateSensor: Sensor? = sensorManager.getDefaultSensor(Sensor.TYPE_HEART_RATE)
+    private val heartRateSensor: Sensor? = sensorManager.getDefaultSensor(Sensor.TYPE_PRESSURE)
 
     private val listeners = HashMap<HeartSensorRepository.HeartRateListener, SensorEventListener>()
 
@@ -27,8 +27,24 @@ class HeartSensorDataStore(context: Context) : HeartSensorRepository {
         }
 
         val eventListener = object : SensorEventListener {
+
+            var oldValue = 0
+            var firstRegister = true
+
             override fun onSensorChanged(sensorEvent: SensorEvent) {
-                listener.onValueChanged(sensorEvent.values[0].toInt())
+
+                if (firstRegister) {
+                    oldValue = sensorEvent.values[0].toInt()
+                    listener.onValueChanged(oldValue)
+                    firstRegister = false
+                    return
+                }
+
+                if (sensorEvent.values[0].toInt() != oldValue) {
+                    oldValue = sensorEvent.values[0].toInt()
+                    listener.onValueChanged(oldValue)
+                }
+
             }
 
             override fun onAccuracyChanged(sensor: Sensor, i: Int) {}
